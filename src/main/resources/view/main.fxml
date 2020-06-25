@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="424.0" maxWidth="563.0" minHeight="415.0" minWidth="563.0" prefHeight="424.0" prefWidth="563.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thunderfrog.main.MainController">
+   <children>
+      <HBox layoutX="14.0" layoutY="9.0" prefHeight="29.0" prefWidth="565.0">
+         <children>
+            <Label alignment="CENTER" text="Full Path:">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="txtPath" onAction="#ScanFolders" prefHeight="25.0" prefWidth="487.0">
+               <HBox.margin>
+                  <Insets left="5.0" top="1.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="43.0" prefHeight="29.0" prefWidth="541.0">
+         <children>
+            <Button fx:id="btnScan" mnemonicParsing="false" onAction="#ScanFolders" prefHeight="29.0" prefWidth="544.0" text="Scan Folders" />
+         </children></HBox>
+      <ScrollPane layoutX="14.0" layoutY="76.0" prefHeight="311.0" prefWidth="541.0">
+         <content>
+            <ListView fx:id="lstFolders" prefHeight="309.0" prefWidth="539.0" />
+         </content>
+      </ScrollPane>
+      <HBox alignment="TOP_RIGHT" layoutX="496.0" layoutY="395.0" prefHeight="29.0" prefWidth="59.0">
+         <children>
+            <Button fx:id="btnCreateList" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#CreateList" text="Create">
+               <HBox.margin>
+                  <Insets right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="394.0" prefHeight="25.0" prefWidth="51.0">
+         <children>
+            <Button fx:id="btnAbout" mnemonicParsing="false" text="About" />
+         </children>
+      </HBox>
+      <HBox layoutX="65.0" layoutY="394.0" prefHeight="25.0" prefWidth="225.0">
+         <children>
+            <Label text="Folders:">
+               <HBox.margin>
+                  <Insets left="10.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="txtFolderCount" text="0">
+               <HBox.margin>
+                  <Insets left="5.0" top="6.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox layoutX="349.0" layoutY="394.0" prefHeight="25.0" prefWidth="147.0">
+         <children>
+            <Label text="Status:">
+               <HBox.margin>
+                  <Insets top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="txtStatus" text="Ready2Go">
+               <HBox.margin>
+                  <Insets left="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</Pane>
