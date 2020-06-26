@@ -1,4 +1,7 @@
 de\thunderfrog\App.class
+de\thunderfrog\utils\OpenWebpage.class
+de\thunderfrog\main\MainController.class
 module-info.class
-de\thunderfrog\controller\AboutController.class
-de\thunderfrog\controller\MainController.class
+de\thunderfrog\about\AboutController.class
+de\thunderfrog\main\FileTypeFilter.class
+de\thunderfrog\utils\PropertiesLoader.class

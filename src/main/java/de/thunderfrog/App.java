@@ -15,13 +15,18 @@ import java.util.Properties;
 public class App extends Application {
 
     private static Scene scene;
+    private Properties prop;
+
+    public App() {
+        this.prop = PropertiesLoader.loadPropertie();
+    }
 
     @Override
     public void start(Stage stage) throws IOException {
         scene = new Scene(loadFXML("main"), 563, 425);
         stage.setScene(scene);
         stage.setResizable(false);
-        stage.setTitle("dir2list - Java GUI Maven");
+        stage.setTitle(prop.getProperty("name"));
         stage.getIcons().add(new Image(App.class.getResourceAsStream("/images/appicon.png")));
         stage.setOnCloseRequest(e -> Platform.exit());
         stage.show();

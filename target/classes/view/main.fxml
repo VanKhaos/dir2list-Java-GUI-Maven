@@ -40,7 +40,7 @@
       </HBox>
       <HBox layoutX="14.0" layoutY="394.0" prefHeight="25.0" prefWidth="51.0">
          <children>
-            <Button fx:id="btnAbout" mnemonicParsing="false" text="About" />
+            <Button fx:id="btnAbout" mnemonicParsing="false" onAction="#showAbout" text="About" />
          </children>
       </HBox>
       <HBox layoutX="65.0" layoutY="394.0" prefHeight="25.0" prefWidth="225.0">

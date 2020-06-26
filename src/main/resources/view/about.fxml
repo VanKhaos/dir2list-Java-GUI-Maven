@@ -29,12 +29,12 @@
       <VBox layoutX="129.0" layoutY="67.0" prefHeight="65.0" prefWidth="157.0">
          <children>
             <Label fx:id="labelVersion" text="1.0.0-SNAPSHOT" />
-            <Hyperlink fx:id="hyperlinkGit" text="Link to Git">
+            <Hyperlink fx:id="hyperlinkGit" onAction="#gotoGit" text="Link to Git">
                <VBox.margin>
                   <Insets left="-2.0" />
                </VBox.margin>
             </Hyperlink>
-            <Hyperlink text="GNU License v3.0">
+            <Hyperlink fx:id="hyperlinkLicense" onAction="#showLicense" text="GNU License v3.0">
                <VBox.margin>
                   <Insets left="-2.0" />
                </VBox.margin>
@@ -43,7 +43,7 @@
       </VBox>
       <Pane layoutX="14.0" layoutY="165.0" prefHeight="29.0" prefWidth="271.0">
          <children>
-            <Label layoutY="6.0" text="Label" />
+            <Button fx:id="btnBackMain" layoutY="2.0" mnemonicParsing="false" onAction="#switchToMain" text="Back" />
          </children>
       </Pane>
    </children>

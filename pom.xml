@@ -22,8 +22,20 @@
             <version>14</version>
         </dependency>
     </dependencies>
+    <!-- More Project Information -->
+    <name>dir2list - Java GUI Maven</name>
+    <description>List Folders and Save in .txt File</description>
+    <url>https://github.com/VanKhaos/dir2list-Java-GUI-Maven</url>
     <!-- Build Settings -->
     <build>
+        <!-- include main.properties -->
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -43,16 +55,6 @@
             </plugin>
         </plugins>
     </build>
-    <!-- More Project Information -->
-    <name>dir2list - Java GUI Maven</name>
-    <description>List Folders and Save in .txt File</description>
-    <url></url>
-    <inceptionYear></inceptionYear>
-    <licenses></licenses>
-    <organization></organization>
-    <developers></developers>
-    <contributors></contributors>
-
     <!-- Environment Settings -->
     <ciManagement>
         <url>https://github.com/VanKhaos/dir2list.JavaGUI</url>

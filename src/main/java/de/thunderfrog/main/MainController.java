@@ -1,7 +1,7 @@
 package de.thunderfrog.main;
 
+import de.thunderfrog.App;
 import de.thunderfrog.utils.PropertiesLoader;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -14,7 +14,6 @@ import javax.swing.filechooser.FileFilter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Properties;
@@ -94,6 +93,10 @@ public class MainController {
         }
     }
 
+    @FXML
+    private void showAbout() throws IOException {
+        App.setRoot("about");
+    }
 
 
     /**
