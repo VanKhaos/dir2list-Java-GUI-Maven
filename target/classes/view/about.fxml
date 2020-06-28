@@ -5,46 +5,46 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<Pane maxHeight="200.0" maxWidth="300.0" minHeight="200.0" minWidth="300.0" prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thunderfrog.about.AboutController">
-   <children>
-      <HBox layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="271.0">
-         <children>
-            <Label prefHeight="41.0" prefWidth="174.0" text="dir2list.Java Maven GUI">
-               <HBox.margin>
-                  <Insets left="50.0" />
-               </HBox.margin>
-               <font>
-                  <Font name="System Bold" size="15.0" />
-               </font>
-            </Label>
-         </children>
-      </HBox>
-      <VBox layoutX="14.0" layoutY="67.0" prefHeight="65.0" prefWidth="114.0">
-         <children>
-            <Label text="Version:" />
-            <Label text="GitHub Repository:" />
-            <Label text="License :" />
-         </children>
-      </VBox>
-      <VBox layoutX="129.0" layoutY="67.0" prefHeight="65.0" prefWidth="157.0">
-         <children>
-            <Label fx:id="labelVersion" text="1.0.0-SNAPSHOT" />
-            <Hyperlink fx:id="hyperlinkGit" onAction="#gotoGit" text="Link to Git">
-               <VBox.margin>
-                  <Insets left="-2.0" />
-               </VBox.margin>
-            </Hyperlink>
-            <Hyperlink fx:id="hyperlinkLicense" onAction="#showLicense" text="GNU License v3.0">
-               <VBox.margin>
-                  <Insets left="-2.0" />
-               </VBox.margin>
-            </Hyperlink>
-         </children>
-      </VBox>
-      <Pane layoutX="14.0" layoutY="165.0" prefHeight="29.0" prefWidth="271.0">
-         <children>
-            <Button fx:id="btnBackMain" layoutY="2.0" mnemonicParsing="false" onAction="#switchToMain" text="Back" />
-         </children>
-      </Pane>
-   </children>
+<Pane maxHeight="200.0" maxWidth="300.0" minHeight="200.0" minWidth="300.0" prefHeight="200.0" prefWidth="300.0"
+      xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="de.thunderfrog.about.AboutController">
+   <HBox layoutX="14.0" layoutY="14.0" prefHeight="41.0" prefWidth="271.0">
+      <Label prefHeight="41.0" prefWidth="174.0" text="dir2list.Java Maven GUI">
+         <HBox.margin>
+            <Insets left="50.0"/>
+         </HBox.margin>
+         <font>
+            <Font name="System Bold" size="15.0"/>
+         </font>
+      </Label>
+   </HBox>
+   <VBox layoutX="14.0" layoutY="67.0" prefHeight="65.0" prefWidth="114.0">
+      <Label text="Version:"/>
+      <Label text="GitHub Repository:">
+         <VBox.margin>
+            <Insets top="5.0"/>
+         </VBox.margin>
+      </Label>
+      <Label text="License :">
+         <VBox.margin>
+            <Insets top="5.0"/>
+         </VBox.margin>
+      </Label>
+   </VBox>
+   <VBox layoutX="129.0" layoutY="67.0" prefHeight="65.0" prefWidth="157.0">
+      <Label fx:id="labelVersion" text="1.0.0-SNAPSHOT"/>
+      <Hyperlink fx:id="hyperlinkGit" onAction="#gotoGit" text="Link to Git">
+         <VBox.margin>
+            <Insets left="-2.0" top="3.0"/>
+         </VBox.margin>
+      </Hyperlink>
+      <Hyperlink fx:id="hyperlinkLicense" onAction="#showLicense" text="GNU License v3.0">
+         <VBox.margin>
+            <Insets left="-2.0" top="-4.0"/>
+         </VBox.margin>
+      </Hyperlink>
+   </VBox>
+   <Pane layoutX="14.0" layoutY="165.0" prefHeight="29.0" prefWidth="271.0">
+      <Button fx:id="btnBackMain" layoutY="2.0" mnemonicParsing="false" onAction="#switchToMain" text="Back"/>
+   </Pane>
 </Pane>

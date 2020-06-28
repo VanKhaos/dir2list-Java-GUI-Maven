@@ -17,9 +17,7 @@ public class App extends Application {
     private static Scene scene;
     private Properties prop;
 
-    public App() {
-        this.prop = PropertiesLoader.loadPropertie();
-    }
+    public App() {this.prop = PropertiesLoader.loadPropertie();}
 
     @Override
     public void start(Stage stage) throws IOException {

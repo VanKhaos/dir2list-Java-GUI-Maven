@@ -8,8 +8,11 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Hyperlink;
 import javafx.scene.control.Label;
+import javafx.scene.paint.Color;
 
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.Properties;
 
 public class AboutController {
@@ -20,8 +23,11 @@ public class AboutController {
     public Hyperlink hyperlinkGit;
     public Hyperlink hyperlinkLicense;
 
-    public AboutController() {
-        this.prop = PropertiesLoader.loadPropertie();
+    public AboutController() {this.prop = PropertiesLoader.loadPropertie();}
+
+    @FXML
+    public void initialize() {
+        labelVersion.setText(prop.getProperty("version"));
     }
 
     @FXML

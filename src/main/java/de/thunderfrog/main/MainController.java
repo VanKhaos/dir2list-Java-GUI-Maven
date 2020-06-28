@@ -1,6 +1,7 @@
 package de.thunderfrog.main;
 
 import de.thunderfrog.App;
+import de.thunderfrog.utils.FileTypeFilter;
 import de.thunderfrog.utils.PropertiesLoader;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;

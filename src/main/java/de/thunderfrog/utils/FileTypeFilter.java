@@ -1,4 +1,4 @@
-package de.thunderfrog.main;
+package de.thunderfrog.utils;
 
 import javax.swing.filechooser.FileFilter;
 import java.io.File;
